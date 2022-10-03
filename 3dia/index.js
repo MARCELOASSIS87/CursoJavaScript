@@ -43,3 +43,15 @@ function CreateBook(title, author, pages) {
 const book1 = new CreateBook('atomic habbit', 'james', 306)
 
 console.log(book1)
+
+let firstName = 'Marcelo'
+
+const email = 'Bom Dia, \nReunião confirmada, \n' + firstName + 'Assis'
+//  a crase `` faz o texto ficar na fromatação digitada
+const email2 = `Bom Dia, 
+Reunião confirmada,
+${firstName}`
+// dolar com chaves imprime a variável direto
+// dentro da string sem concatenação
+console.log(email)
+console.log(email2)
