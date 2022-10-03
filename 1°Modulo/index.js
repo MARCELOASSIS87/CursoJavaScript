@@ -44,12 +44,12 @@ console.log(friends[2])
 // function saleStatus(status, total) {
 
 //     console.log('Transaction ' + status + '! To')
-        
+
 // }
 // saleStatus(friends);
 
 function percentage10(price) {
-    return price - (price * 10/100)
+    return price - (price * 10 / 100)
 }
 
 console.log(percentage10(20))
@@ -57,8 +57,8 @@ console.log(percentage10(20))
 // Operadores Ternários
 
 let driver = 90
-            //Se for verdadeiro            Retorna esse        se falso esse
-let speed =    driver > 110           ? 'Acima da velocidade' :   'Abaixo'
+//Se for verdadeiro            Retorna esse        se falso esse
+let speed = driver > 110 ? 'Acima da velocidade' : 'Abaixo'
 
 console.log(speed)
 
@@ -86,13 +86,31 @@ console.log(corVendida)
 let driverSpeed = 120
 
 if (driverSpeed > 110) {
-    
-console.log('Driving to fast')
 
-}else if(driverSpeed > 40 && driverSpeed <= 110){
+    console.log('Driving to fast')
+
+} else if (driverSpeed > 40 && driverSpeed <= 110) {
 
     console.log('Ok')
 
-}else{
+} else {
     console.log('Too Slow')
+}
+
+// Switch/case
+
+let airport = 'MCO'
+
+switch (airport) {
+    case 'MCO':
+        console.log('Orlando')
+        break
+    case 'JFK':
+        console.log('JFKennedy')
+        break
+    case 'SEA':
+        console.log('Seattle')
+        break
+    default:
+        console.log('Não existe')
 }
