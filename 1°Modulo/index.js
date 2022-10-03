@@ -40,6 +40,7 @@ console.log(friends)
 friends[2] = 'Junior'
 console.log(friends[2])
 
+//Funcoes
 // function saleStatus(status, total) {
 
 //     console.log('Transaction ' + status + '! To')
