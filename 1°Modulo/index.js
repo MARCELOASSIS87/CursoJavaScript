@@ -1,116 +1,156 @@
-console.log('java script funciona');
+// console.log('java script funciona');
 
-// Aula 14
-let firstname = 'Marcelo';
-let lastname = 'Assis';
-console.log(firstname);
-console.log(lastname);
+// // Aula 14
+// let firstname = 'Marcelo';
+// let lastname = 'Assis';
+// console.log(firstname);
+// console.log(lastname);
 
-// variáveis 
+// // variáveis 
 
-let itemName = 'Pen' //String
-let itemPrice = 3 //Number
-let itemAvailable = true //Boolean
-let itemColor = 'Red'
+// let itemName = 'Pen' //String
+// let itemPrice = 3 //Number
+// let itemAvailable = true //Boolean
+// let itemColor = 'Red'
 
-let itemStructure //Undefined
+// let itemStructure //Undefined
 
-itemSecondName = null //apaga o conteúdo da variável
+// itemSecondName = null //apaga o conteúdo da variável
 
-console.log(itemName, itemSecondName, itemPrice, itemAvailable, itemColor)
+// console.log(itemName, itemSecondName, itemPrice, itemAvailable, itemColor)
 
-// javascript é dinâmico ou seja ele altera o tipo da variável conforme
-// o tipo do dado de entrada mesmo que isso seja durante o código
+// // javascript é dinâmico ou seja ele altera o tipo da variável conforme
+// // o tipo do dado de entrada mesmo que isso seja durante o código
 
-// Objeto
-let pen = {
-    itemName: 'Pen',
-    itemPrice: 3,
-    itemAvailable: true,
-    itemColor: 'Red'
-}
-
-pen.itemAvailable = false
-
-console.log(pen)
-console.log(pen.itemColor)
-// Arrays
-let friends = ['Marcos', 'Silvia', 'Elisa']
-console.log(friends)
-friends[2] = 'Junior'
-console.log(friends[2])
-
-//Funcoes
-// function saleStatus(status, total) {
-
-//     console.log('Transaction ' + status + '! To')
-
+// // Objeto
+// let pen = {
+//     itemName: 'Pen',
+//     itemPrice: 3,
+//     itemAvailable: true,
+//     itemColor: 'Red'
 // }
-// saleStatus(friends);
 
-function percentage10(price) {
-    return price - (price * 10 / 100)
-}
+// pen.itemAvailable = false
 
-console.log(percentage10(20))
+// console.log(pen)
+// console.log(pen.itemColor)
+// // Arrays
+// let friends = ['Marcos', 'Silvia', 'Elisa']
+// console.log(friends)
+// friends[2] = 'Junior'
+// console.log(friends[2])
 
-// Operadores Ternários
+// //Funcoes
+// // function saleStatus(status, total) {
 
-let driver = 90
-//Se for verdadeiro            Retorna esse        se falso esse
-let speed = driver > 110 ? 'Acima da velocidade' : 'Abaixo'
+// //     console.log('Transaction ' + status + '! To')
 
-console.log(speed)
+// // }
+// // saleStatus(friends);
 
-// Operadores Lógicos
-let temIdadeMinima = false
-let temTituloEleitor = true
+// function percentage10(price) {
+//     return price - (price * 10 / 100)
+// }
 
-let podeVotar = temIdadeMinima && temTituloEleitor
-console.log(podeVotar)
+// console.log(percentage10(20))
 
-let podeViajar = !podeVotar
+// // Operadores Ternários
 
-console.log(podeViajar)
+// let driver = 90
+// //Se for verdadeiro            Retorna esse        se falso esse
+// let speed = driver > 110 ? 'Acima da velocidade' : 'Abaixo'
 
-let corCliente = 'white'
-let corEstoque = 'Black'
-//Em java script ele vê se a variável foi definida,
-//se sim ele retorna da esquerda pra direita a primeira definida
-let corVendida = corCliente || corEstoque
+// console.log(speed)
 
-console.log(corVendida)
+// // Operadores Lógicos
+// let temIdadeMinima = false
+// let temTituloEleitor = true
 
-// IF statement
+// let podeVotar = temIdadeMinima && temTituloEleitor
+// console.log(podeVotar)
 
-let driverSpeed = 120
+// let podeViajar = !podeVotar
 
-if (driverSpeed > 110) {
+// console.log(podeViajar)
 
-    console.log('Driving to fast')
+// let corCliente = 'white'
+// let corEstoque = 'Black'
+// //Em java script ele vê se a variável foi definida,
+// //se sim ele retorna da esquerda pra direita a primeira definida
+// let corVendida = corCliente || corEstoque
 
-} else if (driverSpeed > 40 && driverSpeed <= 110) {
+// console.log(corVendida)
 
-    console.log('Ok')
+// // IF statement
 
-} else {
-    console.log('Too Slow')
-}
+// let driverSpeed = 120
 
-// Switch/case
+// if (driverSpeed > 110) {
 
-let airport = 'MCO'
+//     console.log('Driving to fast')
 
-switch (airport) {
-    case 'MCO':
-        console.log('Orlando')
+// } else if (driverSpeed > 40 && driverSpeed <= 110) {
+
+//     console.log('Ok')
+
+// } else {
+//     console.log('Too Slow')
+// }
+
+// // Switch/case
+
+// let airport = 'MCO'
+
+// switch (airport) {
+//     case 'MCO':
+//         console.log('Orlando')
+//         break
+//     case 'JFK':
+//         console.log('JFKennedy')
+//         break
+//     case 'SEA':
+//         console.log('Seattle')
+//         break
+//     default:
+//         console.log('Não existe')
+// }
+// // Loops
+// for (contagem = 0; contagem <= 10; contagem++) {
+//     console.log('Numero ', contagem)
+// }
+
+
+// i = 1
+// while (i <= 10) {
+//     console.log('Numero ', i)
+//     i++
+// }
+
+// do {
+//     console.log('Numero ', i)
+//     i++
+// } while (i <= 10)
+
+//Analisa conteúdos e variáveis dentro do objeto
+// const myCar = {
+//     model: 'BMW',
+//     year: 2023,
+//     km: 68000
+// }
+
+// for (let i in myCar)
+//     console.log(i, myCar[i])
+
+const friends = ['Marcos', 'Silvia', 'Elisa']
+
+for (let i of friends) // of ele usa o que está na variável e não o index
+    console.log(i)
+
+i = 1
+while (i <= 10) {
+    if (i === 8) {
         break
-    case 'JFK':
-        console.log('JFKennedy')
-        break
-    case 'SEA':
-        console.log('Seattle')
-        break
-    default:
-        console.log('Não existe')
+    }
+    console.log('Numero ', i)
+    i++
 }
