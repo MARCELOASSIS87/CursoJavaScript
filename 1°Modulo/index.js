@@ -53,3 +53,46 @@ function percentage10(price) {
 }
 
 console.log(percentage10(20))
+
+// Operadores Ternários
+
+let driver = 90
+            //Se for verdadeiro            Retorna esse        se falso esse
+let speed =    driver > 110           ? 'Acima da velocidade' :   'Abaixo'
+
+console.log(speed)
+
+// Operadores Lógicos
+let temIdadeMinima = false
+let temTituloEleitor = true
+
+let podeVotar = temIdadeMinima && temTituloEleitor
+console.log(podeVotar)
+
+let podeViajar = !podeVotar
+
+console.log(podeViajar)
+
+let corCliente = 'white'
+let corEstoque = 'Black'
+//Em java script ele vê se a variável foi definida,
+//se sim ele retorna da esquerda pra direita a primeira definida
+let corVendida = corCliente || corEstoque
+
+console.log(corVendida)
+
+// IF statement
+
+let driverSpeed = 120
+
+if (driverSpeed > 110) {
+    
+console.log('Driving to fast')
+
+}else if(driverSpeed > 40 && driverSpeed <= 110){
+
+    console.log('Ok')
+
+}else{
+    console.log('Too Slow')
+}
