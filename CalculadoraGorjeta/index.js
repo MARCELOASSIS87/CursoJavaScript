@@ -1,7 +1,16 @@
 //Associando o valor a fixo de duas casas decimais
-function formatMoney(value){
+function formatMoney(value) {
+    //Arredondando a útlima casa decimal
+    value = Math.ceil((value * 100) / 100)
     value = value.toFixed(2)
     return 'R$ ' + value
+}
+
+function formatSplit(value) {
+
+    if (value == 1) return value + ' pessoa'
+    return value + ' Pessoas'
+    
 }
 
 
@@ -17,10 +26,10 @@ function update() {
     document.getElementById('tipPercent').innerHTML = tipPercent + '%'
     document.getElementById('tipValue').innerHTML = formatMoney(tipValue)
     document.getElementById('totalWithTip').innerHTML = formatMoney(billTotal)
-    document.getElementById('splitValue').innerHTML = split
+    document.getElementById('splitValue').innerHTML = formatSplit(split)
     document.getElementById('billEach').innerHTML = formatMoney(billTotal / split)
     document.getElementById('gorjetaPessoa').innerHTML = formatMoney(tipValue / split)
-    
+
 
     console.log(billEach)
 }
